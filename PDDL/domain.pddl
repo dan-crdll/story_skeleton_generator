@@ -32,14 +32,14 @@
     :effect (and 
         (at ?x ?to)
         (not (at ?x ?from))
-        ; (when 
-        ;     (and (atHome ?to))
-        ;     (and (increase (movements ?x) 3))
-        ; )
-        ; (when 
-        ;     (and (not (atHome ?to)))
-        ;     (and (increase (movements ?x) 5))
-        ; )
+        (when 
+            (and (atHome ?to))
+            (and (increase (movements ?x) 3))
+        )
+        (when 
+            (and (not (atHome ?to)))
+            (and (increase (movements ?x) 5))
+        )
     )
 )
 
@@ -87,7 +87,7 @@
     )
     :effect (and 
         (reachable ?from ?to) 
-        ; (increase (movements ?x) 1)
+        (increase (movements ?x) 1)
     )
 )
 

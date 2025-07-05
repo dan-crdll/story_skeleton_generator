@@ -15,24 +15,19 @@
     (at friend tavern)
     (know main_c friend tavern)
     (reachable village tavern)
-    (know friend mysterious_man tavern)
     (has mysterious_man map_1)
-    (know mysterious_man monk monastery)
+    (know friend mysterious_man tavern)
+    (know mysterious_man monk monastery) 
     (knowInExchange monk old_book treasure evil_wizard_house)
     (has monk dagger)
     (know monk knight castle)
-    (know knight crown thief_house)
-    (knowInExchange knight dagger old_book ruins)
-    (know knight princess castle)
-    (knowInExchange princess crown sword castle)
-
+    (knowInExchange knight dagger sword castle)
+    (know knight old_book ruins)
     (at enemy_1 ruins)
     (at enemy_2 ruins)
-    (at enemy_3 ruins)
-
-    (at thief thief_house)
-
+    (at old_book ruins)
     (at evil_wizard evil_wizard_house)
+    (at treasure evil_wizard_house)
 )
 
 (:goal (and
@@ -40,6 +35,5 @@
     (has main_c treasure)
 ))
 
-;un-comment the following line if metric is needed
-; (:metric minimize (movements main_c))
+(:metric minimize (movements main_c))
 )

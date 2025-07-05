@@ -28,6 +28,5 @@
     (has main_c treasure)
 ))
 
-;un-comment the following line if metric is needed
-(:metric minimize (movements main_c))
+; (:metric minimize (movements main_c))
 )

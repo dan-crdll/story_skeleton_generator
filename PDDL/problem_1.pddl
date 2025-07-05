@@ -27,5 +27,5 @@
     (at main_c village)
 ))
 
-(:metric minimize (movements main_c))
+; (:metric minimize (movements main_c))
 )
